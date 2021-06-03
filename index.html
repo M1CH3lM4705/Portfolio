@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Michel Matos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#home" class="logo">Michel Matos</a>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#sobre" onclick="toggle()">Sobre</a></li>
+            <li><a href="#projetos" onclick="toggle()">Projetos</a></li>
+            <li><a href="#contato" onclick="toggle()">Contato</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <!--Section Home-->
+    <section id="home">
+        <div class="home text-center">
+            <div class="imgBox"><img class="rounded-circle" src="/img/img-2.jpg" alt=""></div>
+            <h1 class="fw-light">Michel Matos</h1>
+            <p class="lead text-muted">Desenvolvedor Web - Programador Asp.Net C#</p>
+            <p>
+                <a href="#contato" class="btn-first my-2">Contato</a>
+                <a href="/content/michel _Matos de oliveira.pdf" target="_blank" class="btn-first btn-second my-2">Curriculo</a>
+            </p>
+            <div>
+                <a href="https://www.linkedin.com/in/michel-matos-de-oliveira-a36056191/" target="_blank" class="icones">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/M1CH3lM4705/" target="_blank" class="icones">
+                    <i class="fab fa-github"></i></a>
+                <a href="#" class="icones"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Sobre-->
+    <section class="jumbotron " id="sobre">
+        <div class="container">
+            <h1 class="jumbotron-heading text-center">Sobre</h2>
+            <p class="lead lh-base font-monospace">
+                Olá meu nome é <span class="fw-bold">Michel Matos</span>, sou programador e desenvolvedor web.
+                Recem formado no curso de Análise de Sistemas. Em quanto na faculdade, desenvolvi varios projetos, tanto
+                web,
+                como também na construção de um bafômetro com arduíno. Recentemente junto com amigos de faculdade,
+                desenvolvemos um sistema web para ONG Caritas de Porto Velho. Sou um curioso e apaixonado pelo o que as
+                tecnologias podem proporcinar ao mundo.
+            </p>
+        </div>
+    </section>
+
+    <!--Section Projetos-->
+    <section id="projetos">
+        <div class="album py-5 ">
+            <div class="container">
+                <h1 class="jumbotron-heading text-center">Projetos</h2>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="/img/projeto1.jpg" class="card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text text-dark">Esse é um projeto que desenvolvi para Caritas Porto
+                                    velho. Trata-se de um sistema web, que
+                                    tem a finalidade de cadastrar e controlar a entrega de doções a pessoas em situação
+                                    de dificuldade.
+                                    Foram utilizadas as seguintes tecnologias:
+                                </p>
+                                <ul class="text-dark">
+                                    <li>Asp.Net Mvc</li>
+                                    <li>C#</li>
+                                    <li>Entity Framework</li>
+                                    <li>Html</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="http://cadastrodepessoascaritas.somee.com" role="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</a>
+                                        <a href="https://github.com/M1CH3lM4705/projeto_caritas_pvh/tree/master" role="button" class="btn btn-sm btn-outline-secondary">Código</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="/img/projeto2.jpg" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text text-dark">Esse é um projeto que desenvolvi para um cabelereiro.
+                                    Trata-se de um site pessoal, que
+                                    tem a finalidade divulgar o seu serviço .
+                                    Foram utilizadas as seguintes tecnologias:
+                                </p>
+                                <ul class="text-dark">
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="http://danielmatos.gear.host" role="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</a>
+                                        <a href="https://github.com/M1CH3lM4705/ProjetoWebDaniel" role="button" class="btn btn-sm btn-outline-secondary">Código</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+    
+    <!-- Section Contato -->
+    <section id="contato" class="text-center">
+        <div class="container-fluid">
+            <h1 class="jumbotron-heading text-center">Contato</h1>
+            <h3 class="text-center mt-5">Disponível para oportunidades</h3>
+            <p><small>Se você quiser conversar, entre em contato :)</small></p>
+            <p><a href="https://wa.me/5569992033502" class="btn btn-outline-success"><i class="fa fa-whatsapp"></i> Whatsapp</a> </p>
+            <h6 class="text-center">michel.mef@gmail.com</h6>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p class="font-monospace" id="dataAtual"></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7ac4b35db9.js" crossorigin="anonymous"></script>
+    <script src="/js/portjs.js"></script>
+</body>
+
+</html>
