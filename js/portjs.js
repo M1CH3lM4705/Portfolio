@@ -9,3 +9,15 @@ function toggle(){
 var dataAtual = data.getFullYear();
 
 dtAtual.innerText = `© Copyright ${dataAtual} Michel Matos `;
+
+$(document).ready(function () {
+
+    var loader = function () {
+        setTimeout(function () {
+            if ($('#loader').length > 0) {
+                $('#loader').removeClass('show-loader');
+            }
+        }, 1);
+    };
+    loader();
+});
