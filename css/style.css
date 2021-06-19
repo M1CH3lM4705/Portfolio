@@ -200,12 +200,12 @@ section .home i{
    -webkit-box-orient: vertical;
 }
 
-#modal_text{
-    width: 50vw;
+#modalText{
+    width: 30vw;
     transform: scale(0);
-    transform: all linear .3s;
+    transition: all linear .3s;
 }
-.modal_active #modal_text{
+.modal_active #modalText{
     transform: scale(1);
 }
 .modal-Text{
@@ -228,7 +228,7 @@ section .home i{
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
 }
 .modal_content p{
-    height: 300px;
+    
     width: 300px;
     color:#fff;
     font-weight: 600;
