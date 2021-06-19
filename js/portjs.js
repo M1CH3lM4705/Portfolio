@@ -49,3 +49,23 @@ function limpar(elemento) {
 const subtitulo = document.querySelector('#home .lead');
 typeWriter(subtitulo);
 //limpar(subtitulo);
+
+//modal texto ver mais
+let cardTexto = document.querySelectorAll('.text-card');
+let modal = document.querySelector('.modal-Text');
+let modalTexto = document.querySelector('#modalText');
+let btnClose = document.querySelector('#btn_close');
+let btnTexto = document.querySelectorAll('button');
+/* */
+//Adicionar texto selecionado ao modal
+for (let i = 0; i < btnTexto.length; i++) {
+    btnTexto[i].addEventListener('click', function () {
+        modalTexto.innerHTML = cardTexto[i].innerHTML;
+        modal.classList.toggle('modal_active');
+        console.log(modalTexto);
+    })
+}
+
+btnClose.addEventListener('click', () =>{
+    modal.classList.toggle('modal_active');
+})
