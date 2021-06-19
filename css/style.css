@@ -124,6 +124,135 @@ section .home .btn-first{
 section .home i{
     display: inline-block;
 }
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-p{
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    margin:10px;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background: #262626;
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+.card-p:hover .card-info{
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(-50px);
+}
+.card-info h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#eee;
+}
+.card-info h3{
+    font-weight: 500;
+    color:#eee;
+}
+.card-info p{
+    color:#eee;
+    font-weight: 400;
+    width: 80%;
+}
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background:#6a3093;
+    background: -webkit-linear-gradient(to top left, #c4b9b9, #111 70%);
+    background: linear-gradient(to top left, #c4b9b9, #111 70%);
+    font-size: 1rem;
+    color:#eee;
+    box-shadow: 0 .1rem .8rem rgba(0,0,0,.4);
+    outline: none;
+}
+
+.truncate{
+
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+}
+
+#modal_text{
+    width: 50vw;
+    transform: scale(0);
+    transform: all linear .3s;
+}
+.modal_active #modal_text{
+    transform: scale(1);
+}
+.modal-Text{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    top:0;
+    left: -8px;
+    visibility: hidden;
+    z-index: 100;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+}
+.modal_content p{
+    height: 300px;
+    width: 300px;
+    color:#fff;
+    font-weight: 600;
+    line-height: 1.8rem;
+    
+}
+.modal-Text #btn_close{
+    color:#fff;
+    background-color: #000;
+    position: absolute;
+    top:140px;
+    right: 406px;
+    padding:5px 10px;
+    font-size: 15px;
+    border:solid 1px #fff;
+    border-radius: 3px;
+    transition: all ease-out .4s;
+    cursor: pointer;
+}
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
+
 footer{
     height: 155px;
     display: flex;
@@ -242,6 +371,12 @@ footer{
         transform:rotate(-45deg);
         
 
+    }
+    .projetos{
+        flex-wrap: wrap; 
+    }
+    .card-p{
+        margin: 20px;
     }
 
 }

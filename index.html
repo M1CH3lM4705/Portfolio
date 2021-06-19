@@ -64,74 +64,40 @@
     </section>
 
     <!--Section Projetos-->
+    
     <section id="projetos">
-        <div class="album py-5 ">
-            <div class="container">
-                <h1 class="jumbotron-heading text-center">Projetos</h2>
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <div class="card h-100 shadow-sm">
-                            <img src="/img/projeto1.jpg" class="card-img-top" alt="">
-
-                            <div class="card-body">
-                                <p class="card-text text-dark">Esse é um projeto que desenvolvi para Caritas Porto
-                                    velho. Trata-se de um sistema web, que
-                                    tem a finalidade de cadastrar e controlar a entrega de doções a pessoas em situação
-                                    de dificuldade.
-                                    Foram utilizadas as seguintes tecnologias:
-                                </p>
-                                <ul class="text-dark">
-                                    <li>Asp.Net Mvc</li>
-                                    <li>C#</li>
-                                    <li>Entity Framework</li>
-                                    <li>Html</li>
-                                    <li>Javascript</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="http://cadastrodepessoascaritas.somee.com" role="button"
-                                            class="btn btn-sm btn-outline-success">Ver Projeto</a>
-                                        <a href="https://github.com/M1CH3lM4705/projeto_caritas_pvh/tree/master" role="button" class="btn btn-sm btn-outline-secondary">Código</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+        <div class="container">
+            <div>
+                <h1 class="jumbotron-heading text-center">Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card-p ">
+                    <div class="card-img-wrapper">
+                        <img src="/img/projeto1.jpg" alt="">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card h-100 shadow-sm">
-                            <img src="/img/projeto2.jpg" alt="">
-
-                            <div class="card-body">
-                                <p class="card-text text-dark">Esse é um projeto que desenvolvi para um cabelereiro.
-                                    Trata-se de um site pessoal, que
-                                    tem a finalidade divulgar o seu serviço .
-                                    Foram utilizadas as seguintes tecnologias:
-                                </p>
-                                <ul class="text-dark">
-                                    <li>Html</li>
-                                    <li>Css</li>
-                                    <li>Javascript</li>
-                                    <li>Bootstrap</li>
-                                </ul>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="http://danielmatos.gear.host" role="button"
-                                            class="btn btn-sm btn-outline-success">Ver Projeto</a>
-                                        <a href="https://github.com/M1CH3lM4705/ProjetoWebDaniel" role="button" class="btn btn-sm btn-outline-secondary">Código</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="card-info">
+                        <h2>Projet Caritas</h2>
+                        <h3>Asp.Net C#</h3>
+                        <p class="truncate text-card">Esse é um projeto que desenvolvi para Caritas Porto velho.
+                            Trata-se de um sistema web, que tem a finalidade de cadastrar
+                            e controlar a entrega de doções a pessoas em situação de dificuldade.</p>
+                        <button>Saiba Mais</button>
                     </div>
                 </div>
-
-
+                <div class="card-p">
+                    <div class="card-img-wrapper">
+                        <img src="/img/projeto2.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Projeto Daniel Matos</h2>
+                        <h3>Asp.Net C#</h3>
+                        <p class="truncate text-card">Esse é um projeto que desenvolvi para um cabelereiro.
+                            Trata-se de um site pessoal, que tem a finalidade divulgar o seu serviço</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
     
     <!-- Section Contato -->
@@ -145,12 +111,22 @@
         </div>
     </section>
 
+    <!-- footer -->
     <footer class="text-center">
         <p class="font-monospace" id="dataAtual"></p>
     </footer>
     <div class="loader show-loader" id="loader">
         <div class="loader-inner"></div>
     </div>
+
+    <!-- modal -->
+    <div class="modal-Text">
+        <div class="modal_content">
+            <p id="modalText"></p>
+        </div>
+        <span id="btn_close">&times;</span>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
