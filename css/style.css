@@ -390,4 +390,60 @@ footer{
     .home p{
         font-size: 0.75em;
     }
+    .projetos{
+        left:-74px;
+        overflow: hidden;
+    }
+    
+    
+}
+@media(max-width:376px){
+    .card-p {
+        margin-bottom: 30px;
+        height: 17rem;
+    }
+    .card-p:hover .card-info {
+        
+        transform: translateY(0);
+    }
+    .card-img-wrapper {
+        height: unset;
+        border-radius: .5rem .5rem 0 0;
+
+    }
+    .card-img-wrapper img{
+        border-radius: .5rem .5rem 0 0;
+
+    }
+    .card-info{ 
+        opacity: 1;
+        z-index: 0;
+    }
+    .card-info h2{
+        font-size:1rem;
+        color: grey;
+    }
+    .card-info h3{
+        font-size: .8rem;
+        color:grey;
+    }
+    .card-info p {
+        width: 67%;
+        font-size: .8rem;
+        color: grey;
+    }
+    .modal-Text{
+        
+        left:0;
+        
+    }
+    .modal-Text #btn_close{
+        top:115px;
+        right: 30px;
+    }
+    #modalText{
+        width: 100vw;
+        padding: 2rem;
+        text-align: justify;
+    }
 }
