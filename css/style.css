@@ -390,14 +390,7 @@ footer{
     .home p{
         font-size: 0.75em;
     }
-    .projetos{
-        left:-74px;
-        overflow: hidden;
-    }
     
-    
-}
-@media(max-width:376px){
     .card-p {
         margin-bottom: 30px;
         height: 17rem;
@@ -446,4 +439,5 @@ footer{
         padding: 2rem;
         text-align: justify;
     }
+    
 }
