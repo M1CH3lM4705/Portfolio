@@ -441,3 +441,8 @@ footer{
     }
     
 }
+@media(max-width:395px){
+    .card-p{
+        height: 17rem;
+    }
+}
