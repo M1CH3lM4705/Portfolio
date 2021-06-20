@@ -394,7 +394,7 @@ footer{
     
     
 }
-@media(max-width:376px){
+@media(max-width:400px){
     .card-p {
         margin-bottom: 30px;
         height: 17rem;
