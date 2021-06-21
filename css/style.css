@@ -390,7 +390,7 @@ footer{
     .home p{
         font-size: 0.75em;
     }
-    
+
     .card-p {
         margin-bottom: 30px;
         height: 22rem;
@@ -441,7 +441,7 @@ footer{
     }
     
 }
-@media(max-width:395px){
+@media(max-width:442px){
     .card-p{
         height: 17rem;
     }
