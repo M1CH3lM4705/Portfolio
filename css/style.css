@@ -200,12 +200,13 @@ section .home i{
    -webkit-box-orient: vertical;
 }
 
-#modalText{
+#modalText, .links-project{
     width: 30vw;
     transform: scale(0);
     transition: all linear .3s;
 }
-.modal_active #modalText{
+.modal_active #modalText,
+.modal_active .links-project{
     transform: scale(1);
 }
 .modal-Text{
@@ -226,6 +227,7 @@ section .home i{
     align-items: center;
     height: 100vh;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+    flex-direction: column;
 }
 .modal_content p{
     
@@ -234,6 +236,49 @@ section .home i{
     font-weight: 600;
     line-height: 1.8rem;
     
+    
+}
+.modal_content .links-project{
+    padding: 0 0 0 25px;
+    
+}
+.links-project a{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color:#eee;
+    box-shadow: 0 0 5px 0px #e2e2e2;
+    position: relative;
+    transition: .5s;
+}
+.links-project a:hover{
+    color:#18b152;
+}
+.links-project a:after,
+.links-project a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .5s ease-in-out;
+}
+.links-project a:before{
+    border-left: 1px solid #18b152;
+    border-right: 1px solid #18b152;
+    transform: scaleY(0);
+}
+.links-project a:after{
+    border-top: 1px solid #18b152;
+    border-bottom: 1px solid #18b152;
+    transform: scaleX(0);
+}
+.links-project a:hover:before{
+    transform: scaleY(1);
+}
+.links-project a:hover:after{
+    transform: scaleX(1);
 }
 .modal-Text #btn_close{
     color:#fff;
