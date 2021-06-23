@@ -7,10 +7,13 @@
     font-family: 'Poppins', sans-serif;
     
 }
+
 html{
     scroll-behavior: smooth;
 }
-
+a:hover{
+    color:#fff;
+}
 header{
     position: fixed;
     width: 100%;
@@ -36,7 +39,8 @@ header ul{
 }
 header ul li{
     position: relative;
-   list-style: none; 
+    list-style: none; 
+    padding: 0 5px;
 }
 header ul li a{
     position: relative;
@@ -46,9 +50,19 @@ header ul li a{
     text-decoration: none;
     cursor: pointer;
 }
-header ul li a:hover{
-    background:#205aff;
-    color:#fff;
+header ul li a::after{
+    content: '';
+    background: #eee;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+header ul li a:hover::after{
+    width: 100%;
+    color:eee;
 }
 .toggle{
     display: none;
@@ -154,6 +168,7 @@ section .home i{
 .card-info{
     position: absolute;
     bottom: 0;
+    
     padding: 1rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
     opacity: 0;
@@ -163,6 +178,7 @@ section .home i{
 .card-p:hover .card-info{
     opacity: 1;
     bottom: 0;
+    background-color: rgba(0,0,0,.6);
     transform: translateY(-50px);
 }
 .card-info h2{
@@ -239,12 +255,16 @@ section .home i{
     
 }
 .modal_content .links-project{
-    padding: 0 0 0 25px;
-    
+   padding: 0 0 0 25px;
+     /*position: relative;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50px, -50px);*/
 }
 .links-project a{
     text-decoration: none;
     padding: 5px 10px;
+    margin:0 5px;
     font-size: 1rem;
     color:#eee;
     box-shadow: 0 0 5px 0px #e2e2e2;
@@ -423,7 +443,15 @@ footer{
     .card-p{
         margin: 20px;
     }
-
+    #modalText{
+        width: 51vw;
+        padding: 2rem;
+        text-align: justify;
+    }
+    .modal-Text #btn_close{
+        right:140px;
+        
+    }
 }
 @media(max-width: 589px){
     header{
